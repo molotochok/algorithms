@@ -1,3 +1,6 @@
+//  input: abc
+//  output: abc acb bac bca cba cab
+
 private static void Permutations(char[] s, int l, int r)
 {
     if(l == r)
@@ -13,16 +16,3 @@ private static void Permutations(char[] s, int l, int r)
         (s[l], s[i]) = (s[i], s[l]);
     }
 }
-
-/* 
-Example input:
-  abc
-
-Example output:
-  abc
-  acb
-  bac
-  bca
-  cba
-  cab
-*/
