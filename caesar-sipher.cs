@@ -7,7 +7,7 @@ public static string CaesarCipher(string s, int k)
 {
     const int alphabetCharCount = 26;
 
-    k %= 26;
+    k %= alphabetCharCount;
 
     if (k == 0) return s;
 
